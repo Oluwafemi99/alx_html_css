@@ -10,17 +10,15 @@ body{
 
 .wallpaper{
     background-image: url(images/headphones_hero_1.jpg);
-    height: 800px;
-    /* width: 1400px; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
+    height: 800px;
 }
 
 header{
     display: flex;
-    max-width: 1400px;
     padding-top: 20px;
     margin: auto;
 }
@@ -55,6 +53,7 @@ a:hover, a:active{
 
 .landing{
     margin: auto;
+    max-width: 640px;
     text-align: center;
     margin-top: 300px;
     height: 313px;
@@ -72,7 +71,7 @@ a:hover, a:active{
 }
 
 button:hover, button:active{
-    opacity: 0.9;
+    opacity: 0.7;
     cursor: pointer;
 
 }
@@ -105,12 +104,217 @@ button:hover, button:active{
     line-height: 25px;
 }
 
+.about{
+    color: #071629;
+    width: 637px;
+    height: 184;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.about p{
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.about h1{
+    font-size: 30px;
+}
+
+.ipsum h3{
+    color: #071629;
+    margin-top: 20px;
+}
+
+.ipsum p{
+    color: #071629;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-left: 30px;
+    line-height: 26px;
+}
+
+.lorem{
+    display: flex;
+    width: 1002px;
+    height: 193px;
+    margin: auto;
+    margin-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px;
+}
+
+.ipsum{
+    width: 207px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ipsum img{
+    width: 70px;
+    height: 50px;
+}
+
+
+.result-wallpaper{
+    /* width: 1400px;
+    height: 650px; */
+    background-image: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.result-wallpaper h2{
+    padding-top: 170px;
+    text-align: center;
+    width: 448px;
+    height: 40px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.result{
+    width: 637px;
+    height: 104px;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-top: 50px;
+    line-height: 25px;
+}
+
+.two{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 0px 200px;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+}
+
+.pent{
+    width: 190px;
+    height: 190px;
+    position: relative;
+}
+.pent-child{
+    position: absolute;
+    top: 40px;
+    width: 80%;
+    text-align: center;
+}
+
+.pent-child h3{
+    font-size: 40px;
+    width: 89px;
+    height: 26px;
+    padding-left: 30px;
+}
+
+.pent-child p{
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.contact-us{
+    width: 335px;
+    height: 375px;
+    margin: auto;
+    color: #071629;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+}
+
+.contact-us div{
+    width: 335px;
+    height: 29px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact-us h2{
+    text-align: center;
+}
+
+form input, textarea{
+    border: none;
+}
+
+form input{
+    width: 250px;
+    height: 30px;
+}
+
+.contact-us button{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 162px;
+    height: 44px;
+    border-radius: 20px;
+    background-color: #FF6565;
+    color: #ffffff;
+    border: none;
+
+}
+
+.label{
+    margin-top: 30px;
+    border-bottom: #071629 solid 1px;
+    padding-bottom: 5px;
+}
+
+footer{
+    background-color: #071629;
+    height: 249px;
+}
+
+.icons{
+    width: 130px;
+    height: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo{
+    width: 161px;
+    height: 32px;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.copy{
+    text-align: center;
+    font-size: 12px;
+    width: 98px;
+    height: 15px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+
 @media (max-width: 480px) {
     nav{
         padding: 10px;
         align-items: start;
         position: relative;
         gap: 10px;
+        max-width: 100%;
         
     }
 
@@ -124,6 +328,7 @@ button:hover, button:active{
         display: flex;
         height: 32px;
         align-items: center;
+        padding-left: 20px;
     }
 
 
@@ -150,6 +355,32 @@ button:hover, button:active{
     }
     .landing p{
         font-size: 12px;
+        padding-left: 30px;
+    }
+
+    .about{
+        max-width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about p{
+        padding-left: 30px;
+    }
+
+    .lorem{
+        flex-direction: column;
+        max-width: 50%;
+        margin: auto;
+        gap: 30px;
+        padding: 0px 0px;
+    }
+    #video{
+        margin-top: 40px;
+    }
+
+    .ipsum img{
+        margin: auto;
     }
 
     .cont1{
@@ -161,6 +392,62 @@ button:hover, button:active{
         height: 100vh;
     }
 
+    .result-wallpaper h2, p{
+        max-width: 80%;
+    }
+
+    .result-wallpaper{
+        max-width: 100%;
+        height: 100%;
+        margin-top: 800px;
+    }
+
+    .two{
+        flex-direction: column;
+        align-items: center;
+        /* padding-top: 60px; */
+        padding-bottom: 30px;
+        padding: 60px 0px;
+
+    }
+
+    .pent-child p{
+        padding-left: 5px;
+    }
+
+    .pent{
+        padding-left: 40px;
+    }
+
+    .pent-child h3{
+        padding-right: 15px;
+    }
+
+    #pent-gap{
+    margin-top: 0px;
+    }
+
+    .contact-us{
+        max-width: 90%;
+    }
+
+    footer{
+        max-width: 100%;
+        height: 90%;
+    }
+
+    .copy{
+        padding-bottom: 50px;
+        max-width: 80%;
+    }
+
+    .footer-icons{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        max-width: 100%;
+
+    }
 }
 
 /* TABLET VERSION */
